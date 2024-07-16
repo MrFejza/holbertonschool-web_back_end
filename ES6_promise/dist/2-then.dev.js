@@ -13,8 +13,7 @@ function handleResponseFromAPI(promise) {
       body: 'success'
     };
   })["catch"](function () {
-    return new Error();
-  })["finally"](function () {
     console.log('Got a response from the API');
+    return new Error();
   });
 }
