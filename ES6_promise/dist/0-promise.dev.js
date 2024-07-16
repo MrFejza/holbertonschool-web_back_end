@@ -7,6 +7,6 @@ exports["default"] = getResponseFromAPI;
 
 function getResponseFromAPI() {
   return new Promise(function (resolve) {
-    resolve();
+    resolve('');
   });
 }
