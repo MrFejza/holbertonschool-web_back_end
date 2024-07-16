@@ -3,14 +3,14 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports["default"] = signUpUser;
 
 function signUpUser(firstName, lastName) {
-  return Promise.resolve({
-    firstName: firstName,
-    lastName: lastName
+  var myPromise = new Promise(function (resolve) {
+    resolve({
+      firstName: "".concat(firstName),
+      lastName: "".concat(lastName)
+    });
   });
+  return myPromise;
 }
-
-var _default = signUpUser;
-exports["default"] = _default;
