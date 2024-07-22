@@ -1,14 +1,15 @@
+// 3-currency.js
 export default class Currency {
   constructor(code, name) {
     this.code = code;
     this.name = name;
   }
 
-
+  // Getter and setter for code
   get code() {
     return this._code;
   }
-  
+
   set code(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Code must be a string');
@@ -16,7 +17,7 @@ export default class Currency {
     this._code = value;
   }
 
-
+  // Getter and setter for name
   get name() {
     return this._name;
   }
@@ -28,7 +29,7 @@ export default class Currency {
     this._name = value;
   }
 
-
+  // Method to display full currency
   displayFullCurrency() {
     return `${this._name} (${this._code})`;
   }

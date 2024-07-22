@@ -11,6 +11,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+// 3-currency.js
 var Currency =
 /*#__PURE__*/
 function () {
@@ -19,10 +20,12 @@ function () {
 
     this.code = code;
     this.name = name;
-  }
+  } // Getter and setter for code
+
 
   _createClass(Currency, [{
     key: "displayFullCurrency",
+    // Method to display full currency
     value: function displayFullCurrency() {
       return "".concat(this._name, " (").concat(this._code, ")");
     }
@@ -37,7 +40,8 @@ function () {
       }
 
       this._code = value;
-    }
+    } // Getter and setter for name
+
   }, {
     key: "name",
     get: function get() {
