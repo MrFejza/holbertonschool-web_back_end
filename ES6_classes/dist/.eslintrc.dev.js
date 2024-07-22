@@ -21,7 +21,13 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-console': 'off',
     'no-shadow': 'off',
-    'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement']
+    'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
+    // Allow missing spaces around operators
+    'space-infix-ops': 'off',
+    // Allow multiple spaces
+    'no-multi-spaces': 'off',
+    // Allow magic numbers without spacing
+    'no-magic-numbers': 'off'
   },
   overrides: [{
     files: ['*.js'],
