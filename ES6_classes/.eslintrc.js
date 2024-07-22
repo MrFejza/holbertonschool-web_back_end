@@ -34,5 +34,15 @@ module.exports = {
       files: ['*.js'],
       excludedFiles: 'babel.config.js',
     }
-  ]
+  ],
+
+  rules: {
+    // Allow missing spaces around operators
+    space-infix-ops: off,
+    // Allow multiple spaces
+    no-multi-spaces: off,
+    // Allow magic numbers without spacing
+    no-magic-numbers: off
+}
+
 };
