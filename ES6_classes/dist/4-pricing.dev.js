@@ -23,16 +23,13 @@ function () {
 
     this.amount = amount;
     this.currency = currency;
-  } // Getter and setter for amount
-
+  }
 
   _createClass(Pricing, [{
     key: "displayFullPrice",
-    // Method to display full price
     value: function displayFullPrice() {
       return "".concat(this._amount, " ").concat(this._currency.name, " (").concat(this._currency.code, ")");
-    } // Static method to convert price
-
+    }
   }, {
     key: "amount",
     get: function get() {
@@ -44,8 +41,7 @@ function () {
       }
 
       this._amount = value;
-    } // Getter and setter for currency
-
+    }
   }, {
     key: "currency",
     get: function get() {
