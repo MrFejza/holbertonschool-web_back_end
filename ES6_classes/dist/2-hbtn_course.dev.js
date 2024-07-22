@@ -17,12 +17,12 @@ function () {
   function HolbertonCourse(name, length, students) {
     _classCallCheck(this, HolbertonCourse);
 
-    if (typeof name !== "string") {
-      throw new TypeError("Name must be string");
+    if (typeof name !== 'string') {
+      throw new TypeError('Name must be a string');
     }
 
-    if (typeof length !== "number") {
-      throw new TypeError("Length must be number");
+    if (typeof length !== 'number') {
+      throw new TypeError('Length must be a number');
     }
 
     if (!Array.isArray(students) || !students.every(function (student) {
@@ -39,7 +39,7 @@ function () {
   _createClass(HolbertonCourse, [{
     key: "name",
     get: function get() {
-      return this.name;
+      return this._name;
     },
     set: function set(newName) {
       if (typeof newName !== 'string') {
