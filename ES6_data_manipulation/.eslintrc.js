@@ -27,11 +27,14 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],                                   
+    'space-infix-ops': 'off',            
+    'no-multi-spaces': 'off',            
+    'no-magic-numbers': 'off',           
   },
   overrides: [
     {
       files: ['*.js'],
-      excludedFiles: 'babel.config.js',
+      excludedFiles: 'babel.config.js',  
     }
   ]
 };
