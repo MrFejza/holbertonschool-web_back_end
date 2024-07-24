@@ -1,6 +1,8 @@
 export default function getStudentIdsSum(listStudents) {
+ interValue = 0;
   const sum = listStudents.reduce ((acumulation, Ids) => {
-    return acumulation += Ids.id;
-  }, 0)
+    acumulation += Ids.id, interValue;
+  })
+
   return sum;
 }
