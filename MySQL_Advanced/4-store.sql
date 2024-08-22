@@ -1,5 +1,7 @@
---Store Procedures
+-- Set delimiter to $$ to define the trigger properly
+DELIMITER $$
 
+-- Create the trigger
 CREATE TRIGGER after_order_insert
 AFTER INSERT ON orders
 FOR EACH ROW
@@ -10,4 +12,5 @@ BEGIN
     WHERE name = NEW.item_name;
 END $$
 
+-- Restore the default delimiter
 DELIMITER ;
