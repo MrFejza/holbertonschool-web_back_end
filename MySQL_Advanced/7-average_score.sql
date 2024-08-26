@@ -1,15 +1,14 @@
--- Create the stored procedure
 DELIMITER $$
 
-CREATE PROCEDURE ComputeAverageScoreForUser(IN user_id INT)
+CREATE PROCEDURE ComputeAverageScoreForUser(IN input_user_id INT)
 BEGIN
-   UPDATE users 
+    UPDATE users 
     SET average_score = (
         SELECT AVG(score)
         FROM corrections
-        WHERE user_id = user_id
+        WHERE corrections.user_id = input_user_id
     )
-    WHERE id = user_id;
+    WHERE id = input_user_id;
 END $$
 
 DELIMITER ;
