@@ -1,3 +1,5 @@
+-- Set the delimiter to $$ to avoid issues with semicolons
+
 DELIMITER $$
 
 CREATE PROCEDURE ComputeAverageScoreForUser(IN input_user_id INT)
